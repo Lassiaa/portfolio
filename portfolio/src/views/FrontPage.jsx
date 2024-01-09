@@ -138,7 +138,7 @@ const FrontPage = () => {
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
-    const message = `Email address "${emailToCopy}" copied to clipboard`;
+    const message = `Sähköpostiosoite "${emailToCopy}" kopioitu leikepöytään`;
     setAlertMessage(message);
 
     setTimeout(() => {
@@ -383,7 +383,7 @@ const FrontPage = () => {
               <div className="py-6">
                 <h2 className={style.name}>BAC-Buddy</h2>
                 <p className={style.email}>
-                  Android sovellus, jonka avulla käyttäjä voi mitata veren
+                  Android-sovellus, jonka avulla käyttäjä voi mitata veren
                   alkopholipitoisuuden.
                 </p>
 
@@ -459,7 +459,7 @@ const FrontPage = () => {
                 </h2>
                 <p className={style.email}>
                   Olen viimeisen vuoden insinööriopiskelija (219op). Pääaineena
-                  mediatekiikka.
+                  mediatekniikka.
                 </p>
 
                 <div className="flex flex-row justify-center gap-1">
@@ -485,7 +485,7 @@ const FrontPage = () => {
                 <h2 className={style.name}>Datanomi tutkinto 2020</h2>
                 <p className={style.email}>
                   Valmistuin Datanomiksi Helsinki Business Collegesta vuonna
-                  2020 verkkokehitykseen suuntautuen keskiarvolla 4.7.
+                  2020 suuntautuen verkkokehitykseen keskiarvolla 4.7.
                 </p>
 
                 <div className="flex flex-row justify-center gap-1">
