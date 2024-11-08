@@ -310,6 +310,7 @@ const FrontPage = () => {
               <div
                 className={style.teamImgM}
                 style={{
+                  width: "50%",
                   backgroundImage:
                     "url('https://upload.wikimedia.org/wikipedia/fi/thumb/6/61/Metropolia_Ammattikorkeakoulu_logo.svg/2560px-Metropolia_Ammattikorkeakoulu_logo.svg.png')",
                 }}
@@ -509,14 +510,11 @@ const FrontPage = () => {
         <div className={style.teamContainer}>
           <h2 className={style.teamHeading}>Hobbies</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-            <div className={style.infoText}>
-              <h2 className={style.infoH2}>Drawing</h2>
-              <p>
-                I have been drawing since I was a kid. Nowadays I draw on my
-                Ipad using Procreate.
-              </p>
-            </div>
-            <div className={style.hobbyContainer}>
+            <div
+              className={
+                "order-0 sm:order-2 h-full w-full mx-auto border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              }
+            >
               <div
                 className={style.infoImg}
                 style={{
@@ -527,7 +525,24 @@ const FrontPage = () => {
                 <div className={style.imgDarken}></div>
               </div>
             </div>
-            <div className={style.hobbyContainer}>
+
+            <div
+              className={
+                "order-1 sm:order-1 text-left text-md font-inter pb-20"
+              }
+            >
+              <h2 className={style.infoH2}>Drawing</h2>
+              <p>
+                I have been drawing since I was a kid. Nowadays I draw on my
+                Ipad using Procreate.
+              </p>
+            </div>
+
+            <div
+              className={
+                "order-2 sm:order-2 h-full w-full mx-auto border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              }
+            >
               <div
                 className={style.infoImg}
                 style={{
@@ -537,21 +552,20 @@ const FrontPage = () => {
                 <div className={style.imgDarken}></div>
               </div>
             </div>
-            <div className={style.infoText}>
+            <div
+              className={
+                "order-3 sm:order-3 text-left text-md font-inter pb-20"
+              }
+            >
               <h2 className={style.infoH2}>3D Printing</h2>
               <p>I strated 3D printing as a hobby in 2022.</p>
             </div>
 
-            <div className={style.infoText}>
-              <h2 className={style.infoH2}>Floorball</h2>
-              <p>
-                I played floorball competitively and at the challenger level for
-                over 12 years when I was younger. I also played one season in
-                the men's 5th division. I was on teams Blackbirds and TusBy.
-                Nowadays, I play occasionally just for fun.
-              </p>
-            </div>
-            <div className={style.hobbyContainer}>
+            <div
+              className={
+                "order-4 sm:order-5 h-full w-full mx-auto border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              }
+            >
               <div
                 className={style.infoImg}
                 style={{
@@ -561,7 +575,26 @@ const FrontPage = () => {
                 <div className={style.imgDarken}></div>
               </div>
             </div>
-            <div className={style.hobbyContainer}>
+
+            <div
+              className={
+                "order-5 sm:order-4 text-left text-md font-inter pb-20"
+              }
+            >
+              <h2 className={style.infoH2}>Floorball</h2>
+              <p>
+                I played floorball competitively and at the challenger level for
+                over 12 years when I was younger. I also played one season in
+                the men's 5th division. I was on teams Blackbirds and TusBy.
+                Nowadays, I play occasionally just for fun.
+              </p>
+            </div>
+
+            <div
+              className={
+                "order-6 sm:order-5 h-full w-full mx-auto border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              }
+            >
               <div
                 className={style.infoImg}
                 style={{
@@ -571,7 +604,11 @@ const FrontPage = () => {
                 <div className={style.imgDarken}></div>
               </div>
             </div>
-            <div className={style.infoText}>
+            <div
+              className={
+                "order-7 sm:order-6 text-left text-md font-inter pb-20"
+              }
+            >
               <h2 className={style.infoH2}>Gym</h2>
               <p>
                 I've been consistently going to the gym for two years, aiming to
@@ -579,15 +616,11 @@ const FrontPage = () => {
               </p>
             </div>
 
-            <div className={style.infoText}>
-              <h2 className={style.infoH2}>Golf</h2>
-              <p>
-                I strated to Golf this summer and fell in love with the sport. I
-                completed the Green Card course at Virvik Golf. Golf Pro
-                Christine Blomqwist was my instructor.
-              </p>
-            </div>
-            <div className={style.hobbyContainer}>
+            <div
+              className={
+                "order-8 sm:order-9 h-full w-full mx-auto border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              }
+            >
               <div
                 className={style.infoImg}
                 style={{
@@ -596,6 +629,19 @@ const FrontPage = () => {
               >
                 <div className={style.imgDarken}></div>
               </div>
+            </div>
+
+            <div
+              className={
+                "order-9 sm:order-8 text-left text-md font-inter pb-20"
+              }
+            >
+              <h2 className={style.infoH2}>Golf</h2>
+              <p>
+                I strated to Golf this summer and fell in love with the sport. I
+                completed the Green Card course at Virvik Golf. Golf Pro
+                Christine Blomqwist was my instructor.
+              </p>
             </div>
           </div>
         </div>

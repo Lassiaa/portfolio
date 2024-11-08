@@ -35,9 +35,9 @@ const style = {
   bannerContent: "bg-black bg-opacity-50 h-screen grid grid-cols-1 gap-4",
   bannerTitle: "h-20 pt-20 text-6xl text-center text-secondary font-abril",
 
-  bannerInfo: "text-center self-center",
+  bannerInfo: "text-center self-center pt-10",
   bannerLassi:
-    "h-80 w-80 xs:h-96 xs:w-96 sm:h-128 sm:w-128 mx-auto border-2 border-secondary border-opacity-60 rounded-full",
+    "h-80 w-80 xs:h-96 xs:w-96  mx-auto border-2 border-secondary border-opacity-60 rounded-full",
   lassiImg: "bg-cover bg-top bg-no-repeat w-full h-full rounded-full",
   lassiDarken:
     "ease-in-out duration-300 bg-black bg-opacity-20 hover:bg-opacity-0 h-full w-full rounded-full",
@@ -64,9 +64,9 @@ const style = {
 
   teamSection: "max-w-full sm:max-w-5xl mx-auto text-gray-700",
   teamContainer: "container px-5 py-24 mx-auto",
-  teamHeading: "text-3xl p-12 text-primary font-abril",
-  projectH31: "text-xl pb-6 text-secondary text-left",
-  projectH3: "text-xl py-6 text-secondary text-left",
+  teamHeading: "text-3xl p-12 pb-20 text-primary font-abril",
+  projectH31: "text-xl pb-10 text-secondary text-left",
+  projectH3: "text-xl py-10 text-secondary text-left",
   memberContainer:
     "h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:border-secondary transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110",
   teamImg:
