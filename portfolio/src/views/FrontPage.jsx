@@ -112,7 +112,21 @@ const FrontPage = () => {
     width: scrolled,
   };
 
-  const images = ["/images/drawings/240girl.jpg"];
+  const images = [
+    "/images/drawings/240girl.jpg",
+    "/images/drawings/Baby-Yoda.png",
+    "/images/drawings/city-night-time.png",
+    "/images/drawings/Concept-One.png",
+    "/images/drawings/Donut.png",
+    "/images/drawings/Guy-With-Lantern.png",
+    "/images/drawings/Guy-With-Pitchfork.png",
+    "/images/drawings/porsche992gt3.png",
+    "/images/drawings/r34_v2.png",
+    "/images/drawings/Silvia-S15.png",
+    "/images/drawings/Untitled_Artwork.png",
+    "/images/drawings/Wizard.png",
+    "/images/drawings/apple.jpg",
+  ];
 
   const emailToCopy = "lassi.antero.aaltonen@gmail.com";
 
@@ -185,7 +199,8 @@ const FrontPage = () => {
       <div
         className={style.bannerImage}
         style={{
-          backgroundImage: "url('')",
+          backgroundImage:
+            "url('https://static.vecteezy.com/system/resources/previews/021/583/370/non_2x/aesthetic-background-illustrations-of-clouds-stars-and-sky-with-purple-gradations-suitable-for-wallpapers-presentation-backgrounds-and-various-other-design-needs-free-vector.jpg')",
         }}
       >
         <div className={style.bannerContent}>
@@ -248,7 +263,7 @@ const FrontPage = () => {
               <div
                 className={style.infoImg}
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage: "url('/images/drinks.jpeg')",
                 }}
               >
                 <div className={style.imgDarken}></div>
@@ -287,6 +302,75 @@ const FrontPage = () => {
         </div>
       </section>
 
+      <section className={style.teamSection} id="studies">
+        <div className={style.teamContainer}>
+          <h2 className={style.teamHeading}>Education</h2>
+          <div className="grid gap-10 grid-cols-1 max-w-screen-md mx-auto">
+            <div className={style.memberContainer}>
+              <div
+                className={style.teamImgM}
+                style={{
+                  backgroundImage:
+                    "url('https://upload.wikimedia.org/wikipedia/fi/thumb/6/61/Metropolia_Ammattikorkeakoulu_logo.svg/2560px-Metropolia_Ammattikorkeakoulu_logo.svg.png')",
+                }}
+              ></div>
+
+              <div className="py-6">
+                <h2 className={style.name}>
+                  Bachelor's Degree in Information and Communication Technology,
+                  Metropolia, 2025
+                </h2>
+                <p className={style.email}>
+                  Final year engineering student at Metropolia University of
+                  Applied Sciences. I am studying Information and Communication
+                  Technology. <br />
+                  (Currently 239 ECTS)
+                </p>
+
+                <div className="flex flex-row justify-center gap-1">
+                  <a
+                    className={style.icon}
+                    href="https://www.metropolia.fi/fi/opiskelu-metropoliassa/amk-tutkinnot/tieto-ja-viestintatekniikka"
+                  >
+                    <WebIcon />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={style.memberContainer}>
+              <div
+                className={style.teamImg}
+                style={{
+                  backgroundImage: "url('https://tickets.bc.fi/logo.php')",
+                }}
+              ></div>
+
+              <div className="py-6">
+                <h2 className={style.name}>
+                  Vocational Qualification in Business Information Technology,
+                  Helsinki Business College, 2020
+                </h2>
+                <p className={style.email}>
+                  I graduated from Helsinki Business College 2020 with the final
+                  grade of 4.7. I studied Business Information Technology
+                  oriented towards programming.
+                </p>
+
+                <div className="flex flex-row justify-center gap-1">
+                  <a
+                    className={style.icon}
+                    href="https://www.bc.fi/koulutukset/datanomi/"
+                  >
+                    <WebIcon />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className={style.teamSection} id="project">
         <div className={style.teamContainer}>
           <h2 className={style.teamHeading}>Projects</h2>
@@ -296,7 +380,7 @@ const FrontPage = () => {
               <div
                 className={style.teamImg}
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage: "url('/images/projects/webweave.png')",
                 }}
               >
                 <div className={style.imgDarken}></div>
@@ -305,8 +389,8 @@ const FrontPage = () => {
               <div className="py-6">
                 <h2 className={style.name}>Webweave</h2>
                 <p className={style.email}>
-                  OpenAI pohjainen AI-sivukone, jonka avulla käyttäjä voi luoda
-                  omat kotisivut.
+                  OpenAI based AI website generator, that generates websites
+                  based on users input.
                 </p>
 
                 <div className="flex flex-row justify-center gap-1">
@@ -327,15 +411,15 @@ const FrontPage = () => {
               <div
                 className={style.teamImg}
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage: "url('/images/projects/velling.png')",
                 }}
               >
                 <div className={style.imgDarken}></div>
               </div>
               <div className="py-6">
-                <h2 className={style.name}>Yritys sivut</h2>
+                <h2 className={style.name}>Company Website</h2>
                 <p className={style.email}>
-                  Rakennus- ja remontointipalvelu Velling yrityksen kotisivut.
+                  Rakennus- ja remontointipalvelu Velling homepage.
                 </p>
 
                 <div className="flex flex-row justify-center gap-1">
@@ -349,14 +433,14 @@ const FrontPage = () => {
               </div>
             </div>
           </div>
-          <h3 className={style.projectH3}>Mobiilisiovellukset</h3>
+          <h3 className={style.projectH3}>Mobile Applications</h3>
 
           <div className="grid gap-4 grid-cols-1 xs:grid-cols-2 sm:grid-cols-3">
             <div className={style.memberContainer}>
               <div
                 className={style.teamImg}
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage: "url('/images/projects/Bac-Buddy.png')",
                 }}
               >
                 <div className={style.imgDarken}></div>
@@ -364,8 +448,8 @@ const FrontPage = () => {
               <div className="py-6">
                 <h2 className={style.name}>BAC-Buddy</h2>
                 <p className={style.email}>
-                  Android-sovellus, jonka avulla käyttäjä voi mitata veren
-                  alkopholipitoisuuden.
+                  Android-application, that lets user measure their blood
+                  alcohol level.
                 </p>
 
                 <div className="flex flex-row justify-center gap-1">
@@ -379,7 +463,7 @@ const FrontPage = () => {
               </div>
             </div>
           </div>
-          <h3 className={style.projectH3}>Piirustukset</h3>
+          <h3 className={style.projectH3}>Drawings</h3>
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 768: 2, 1024: 3 }}
           >
@@ -421,85 +505,41 @@ const FrontPage = () => {
         </div>
       </section>
 
-      <section className={style.teamSection} id="studies">
-        <div className={style.teamContainer}>
-          <h2 className={style.teamHeading}>Koulutus</h2>
-          <div className="grid gap-10 grid-cols-1 max-w-screen-md mx-auto">
-            <div className={style.memberContainer}>
-              <div
-                className={style.teamImgM}
-                style={{
-                  backgroundImage:
-                    "url('https://upload.wikimedia.org/wikipedia/fi/thumb/6/61/Metropolia_Ammattikorkeakoulu_logo.svg/2560px-Metropolia_Ammattikorkeakoulu_logo.svg.png')",
-                }}
-              ></div>
-
-              <div className="py-6">
-                <h2 className={style.name}>
-                  Tieto- ja viestintätekniikan insinööri tutkinto 2024
-                </h2>
-                <p className={style.email}>
-                  Olen viimeisen vuoden insinööriopiskelija (219op). Pääaineena
-                  mediatekniikka.
-                </p>
-
-                <div className="flex flex-row justify-center gap-1">
-                  <a
-                    className={style.icon}
-                    href="https://www.metropolia.fi/fi/opiskelu-metropoliassa/amk-tutkinnot/tieto-ja-viestintatekniikka"
-                  >
-                    <WebIcon />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className={style.memberContainer}>
-              <div
-                className={style.teamImg}
-                style={{
-                  backgroundImage: "url('https://tickets.bc.fi/logo.php')",
-                }}
-              ></div>
-
-              <div className="py-6">
-                <h2 className={style.name}>Datanomi tutkinto 2020</h2>
-                <p className={style.email}>
-                  Valmistuin datanomiksi Helsinki Business Collegesta vuonna
-                  2020 verkkokehityksen linjalta keskiarvolla 4.7.
-                </p>
-
-                <div className="flex flex-row justify-center gap-1">
-                  <a
-                    className={style.icon}
-                    href="https://www.bc.fi/koulutukset/datanomi/"
-                  >
-                    <WebIcon />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className={style.hobbySection} id="hobbies">
         <div className={style.teamContainer}>
           <h2 className={style.teamHeading}>Hobbies</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <div className={style.infoText}>
+              <h2 className={style.infoH2}>Drawing</h2>
+              <p>
+                I have been drawing since I was a kid. Nowadays I draw on my
+                Ipad using Procreate.
+              </p>
+            </div>
             <div className={style.hobbyContainer}>
               <div
                 className={style.infoImg}
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage:
+                    "url('/images/drawings/Guy-With-Lantern.png')",
+                }}
+              >
+                <div className={style.imgDarken}></div>
+              </div>
+            </div>
+            <div className={style.hobbyContainer}>
+              <div
+                className={style.infoImg}
+                style={{
+                  backgroundImage: "url('/images/hobbies/3dprint.jpg')",
                 }}
               >
                 <div className={style.imgDarken}></div>
               </div>
             </div>
             <div className={style.infoText}>
-              <h2 className={style.infoH2}>3D-Printing</h2>
-              <p>I strated 3D-pinting as a hobby in 2022.</p>
+              <h2 className={style.infoH2}>3D Printing</h2>
+              <p>I strated 3D printing as a hobby in 2022.</p>
             </div>
 
             <div className={style.infoText}>
@@ -515,7 +555,7 @@ const FrontPage = () => {
               <div
                 className={style.infoImg}
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage: "url('/images/hobbies/floorball.jpg')",
                 }}
               >
                 <div className={style.imgDarken}></div>
@@ -525,7 +565,7 @@ const FrontPage = () => {
               <div
                 className={style.infoImg}
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage: "url('/images/hobbies/gym.jpg')",
                 }}
               >
                 <div className={style.imgDarken}></div>
@@ -534,8 +574,8 @@ const FrontPage = () => {
             <div className={style.infoText}>
               <h2 className={style.infoH2}>Gym</h2>
               <p>
-                I've been going to the gym actively for 2 years now. I try to go
-                to the gym 3 times a week.
+                I've been consistently going to the gym for two years, aiming to
+                work out three times a week.
               </p>
             </div>
 
@@ -551,7 +591,7 @@ const FrontPage = () => {
               <div
                 className={style.infoImg}
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage: "url('/images/hobbies/golf.jpg')",
                 }}
               >
                 <div className={style.imgDarken}></div>
