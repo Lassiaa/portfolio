@@ -38,7 +38,6 @@ jobs:
         working-directory: ./scriptwiz
       - name: Build code
         run: npm run build
-        env:
         working-directory: ./scriptwiz
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
