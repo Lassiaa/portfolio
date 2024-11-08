@@ -112,7 +112,7 @@ const FrontPage = () => {
     width: scrolled,
   };
 
-  const images = ["./assets/img/240girl.jpg"];
+  const images = ["/images/drawings/240girl.jpg"];
 
   const emailToCopy = "lassi.antero.aaltonen@gmail.com";
 
@@ -255,16 +255,17 @@ const FrontPage = () => {
               </div>
             </div>
             <div className={style.infoText}>
-              <h2 className={style.infoH2}>22-vuotias nuori Keravalta.</h2>
+              <h2 className={style.infoH2}>22-year-old from Kerava</h2>
               <p>
-                Pidän haasteita ja uuden oppimista. Olen sosiaalinen ja tulen
-                hyvin toimeen erilaisten ihmisten kanssa. Vapaa-ajallani nautin
-                urheilusta, piirtämisestä/animoinnista, pelaamisesta,
-                ohjelmoinnista, 3D-mallinnuksesta ja tulostamisesta, elokuvien
-                katselusta sekä ajanvietosta ystävien ja perheen parissa.
+                I am currently in my final year of studying Information and
+                Communication Technology Engineering at Metropolia University of
+                Applied Sciences. I am proactive, positive, and eager to learn
+                new things. I hope to utilize my fresh skills and knowledge in
+                the field of programming. I enjoy challenges and learning new
+                things.
               </p>
               <div>
-                <h3 className={style.infoH3}>Yhteystiedot</h3>
+                <h3 className={style.infoH3}>Contact Information</h3>
                 <div>
                   <PhoneIcon /> 044 033 7675
                 </div>
@@ -288,8 +289,8 @@ const FrontPage = () => {
 
       <section className={style.teamSection} id="project">
         <div className={style.teamContainer}>
-          <h2 className={style.teamHeading}>Projektit</h2>
-          <h3 className={style.projectH31}>Nettisivut</h3>
+          <h2 className={style.teamHeading}>Projects</h2>
+          <h3 className={style.projectH31}>Websites</h3>
           <div className="grid gap-4 grid-cols-1 xs:grid-cols-2 sm:grid-cols-3">
             <div className={style.memberContainer}>
               <div
@@ -484,7 +485,7 @@ const FrontPage = () => {
 
       <section className={style.hobbySection} id="hobbies">
         <div className={style.teamContainer}>
-          <h2 className={style.teamHeading}>Harrastukset</h2>
+          <h2 className={style.teamHeading}>Hobbies</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className={style.hobbyContainer}>
               <div
@@ -497,17 +498,53 @@ const FrontPage = () => {
               </div>
             </div>
             <div className={style.infoText}>
-              <h2 className={style.infoH2}>Kuntosali</h2>
-              <p>Pyrin käymään kuntosalilla noin 2-3 kertaa viikossa.</p>
+              <h2 className={style.infoH2}>3D-Printing</h2>
+              <p>I strated 3D-pinting as a hobby in 2022.</p>
             </div>
 
             <div className={style.infoText}>
-              <h2 className={style.infoH2}>Salibandy</h2>
+              <h2 className={style.infoH2}>Floorball</h2>
               <p>
-                Pelasin salibandyä nuorempana sekä kilpa-, että haastajatasolla
-                yli 12 vuotta. Pelasin myös yhden kauden miesten 5. divarissa.
-                Olin joukkueissa Blackbirdsis ja TusBy. Nykyään käyn
-                satunnaisissa harjoitus peleissä.
+                I played floorball competitively and at the challenger level for
+                over 12 years when I was younger. I also played one season in
+                the men's 5th division. I was on teams Blackbirds and TusBy.
+                Nowadays, I play occasionally just for fun.
+              </p>
+            </div>
+            <div className={style.hobbyContainer}>
+              <div
+                className={style.infoImg}
+                style={{
+                  backgroundImage: "url('')",
+                }}
+              >
+                <div className={style.imgDarken}></div>
+              </div>
+            </div>
+            <div className={style.hobbyContainer}>
+              <div
+                className={style.infoImg}
+                style={{
+                  backgroundImage: "url('')",
+                }}
+              >
+                <div className={style.imgDarken}></div>
+              </div>
+            </div>
+            <div className={style.infoText}>
+              <h2 className={style.infoH2}>Gym</h2>
+              <p>
+                I've been going to the gym actively for 2 years now. I try to go
+                to the gym 3 times a week.
+              </p>
+            </div>
+
+            <div className={style.infoText}>
+              <h2 className={style.infoH2}>Golf</h2>
+              <p>
+                I strated to Golf this summer and fell in love with the sport. I
+                completed the Green Card course at Virvik Golf. Golf Pro
+                Christine Blomqwist was my instructor.
               </p>
             </div>
             <div className={style.hobbyContainer}>
