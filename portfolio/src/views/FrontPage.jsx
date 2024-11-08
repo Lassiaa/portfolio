@@ -65,17 +65,17 @@ const FrontPage = () => {
   }, []);
 
   const smoothScroll = (linkId, targetId) => {
-    console.log(`Smooth Scroll Called for ${linkId}`);
+    // console.log(`Smooth Scroll Called for ${linkId}`);
     const scrollLink = document.getElementById(linkId);
 
     if (scrollLink) {
-      console.log(`Found Scroll Link`);
+      // console.log(`Found Scroll Link`);
       scrollLink.addEventListener("click", (event) => {
         event.preventDefault();
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-          console.log(`Found Target Element`);
+          // console.log(`Found Target Element`);
           targetElement.scrollIntoView({
             behavior: "smooth",
             block: "start",
@@ -133,7 +133,7 @@ const FrontPage = () => {
   };
 
   return (
-    <body className={style.body} id="top">
+    <div className={style.body} id="top">
       <div className="progress-container" style={progressContainerStyle}>
         <div className="progress-bar" style={progressBarStyle} />
       </div>
@@ -157,25 +157,25 @@ const FrontPage = () => {
                 className={contrast ? style.headerAContrast : style.headerA}
                 id="aboutme-link"
               >
-                Tietoa minusta
+                About me
               </a>
               <a
                 className={contrast ? style.headerAContrast : style.headerA}
                 id="contacts-link"
               >
-                Yhteystiedot
+                Contact info
               </a>
               <a
                 className={contrast ? style.headerAContrast : style.headerA}
                 id="project-link"
               >
-                Projektit
+                Projects
               </a>
               <a
                 className={contrast ? style.headerAContrast : style.headerA}
                 id="studies-link"
               >
-                Koulutus
+                Education
               </a>
             </div>
           </div>
@@ -185,7 +185,7 @@ const FrontPage = () => {
       <div
         className={style.bannerImage}
         style={{
-          backgroundImage: "url('./assets/img/lassijaporsche.jpeg')",
+          backgroundImage: "url('')",
         }}
       >
         <div className={style.bannerContent}>
@@ -198,7 +198,7 @@ const FrontPage = () => {
               <div
                 className={style.lassiImg}
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage: "url('/images/lassijaporsche.jpeg')",
                 }}
               >
                 <div className={style.lassiDarken}></div>
@@ -242,7 +242,7 @@ const FrontPage = () => {
 
       <section className={style.infoSection} id="info">
         <div className={style.teamContainer}>
-          <h2 className={style.teamHeading}>Tietoa minusta</h2>
+          <h2 className={style.teamHeading}>About me</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className={style.infoContainer}>
               <div
@@ -255,7 +255,7 @@ const FrontPage = () => {
               </div>
             </div>
             <div className={style.infoText}>
-              <h2 className={style.infoH2}>21-vuotias nuori Keravalta.</h2>
+              <h2 className={style.infoH2}>22-vuotias nuori Keravalta.</h2>
               <p>
                 Pidän haasteita ja uuden oppimista. Olen sosiaalinen ja tulen
                 hyvin toimeen erilaisten ihmisten kanssa. Vapaa-ajallani nautin
@@ -523,7 +523,7 @@ const FrontPage = () => {
           </div>
         </div>
       </section>
-    </body>
+    </div>
   );
 };
 
