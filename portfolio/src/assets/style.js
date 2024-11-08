@@ -53,18 +53,19 @@ const style = {
   bannerArrow:
     "text-secondary transition duration-500 ease-in-out transform hover:-translate-y-1",
 
-  infoSection: "mx-auto text-gray-700",
+  infoSection: "w-full sm:max-w-5xl mx-auto text-gray-700",
   infoContainer:
-    "h-full w-full md:w-2/3 mx-auto border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden",
+    "h-fit w-full mx-auto border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden",
   infoImg: "bg-cover bg-center bg-no-repeat w-full h-96",
 
   infoText: "text-left text-md font-inter",
   infoH2: "text-3xl font-bold font-josefin text-secondary pb-4",
   infoH3: "text-2xl font-bold font-josefin text-secondary py-4",
 
-  teamSection: "max-w-5xl mx-auto text-gray-700",
+  teamSection: "max-w-full sm:max-w-5xl mx-auto text-gray-700",
   teamContainer: "container px-5 py-24 mx-auto",
   teamHeading: "text-3xl p-12 text-primary font-abril",
+  projectH31: "text-xl pb-6 text-secondary text-left",
   projectH3: "text-xl py-6 text-secondary text-left",
   memberContainer:
     "h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:border-secondary transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110",
@@ -86,6 +87,10 @@ const style = {
   modalBtnContainer: "w-full h-20 flex flex-row justify-center gap-4",
   modalBtn:
     "ease-in-out duration-300 text-white bg-secondary h-12 my-2 py-2 px-6 focus:outline-none hover:bg-primary rounded text-md justify-self-center",
+
+  hobbySection: "max-w-5xl mx-auto text-gray-700",
+  hobbyContainer:
+    "h-full w-full mx-auto border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden",
 };
 
 export default style;

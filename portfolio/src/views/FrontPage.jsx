@@ -306,7 +306,7 @@ const FrontPage = () => {
       <section className={style.teamSection} id="project">
         <div className={style.teamContainer}>
           <h2 className={style.teamHeading}>Projektit</h2>
-          <h3 className={style.projectH3}>Nettisivut</h3>
+          <h3 className={style.projectH31}>Nettisivut</h3>
           <div className="grid gap-4 grid-cols-1 xs:grid-cols-2 sm:grid-cols-3">
             <div className={style.memberContainer}>
               <div
@@ -484,8 +484,8 @@ const FrontPage = () => {
               <div className="py-6">
                 <h2 className={style.name}>Datanomi tutkinto 2020</h2>
                 <p className={style.email}>
-                  Valmistuin Datanomiksi Helsinki Business Collegesta vuonna
-                  2020 suuntautuen verkkokehitykseen keskiarvolla 4.7.
+                  Valmistuin datanomiksi Helsinki Business Collegesta vuonna
+                  2020 verkkokehityksen linjalta keskiarvolla 4.7.
                 </p>
 
                 <div className="flex flex-row justify-center gap-1">
@@ -496,6 +496,48 @@ const FrontPage = () => {
                     <WebIcon />
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={style.hobbySection} id="hobbies">
+        <div className={style.teamContainer}>
+          <h2 className={style.teamHeading}>Harrastukset</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <div className={style.hobbyContainer}>
+              <div
+                className={style.infoImg}
+                style={{
+                  backgroundImage: "url('')",
+                }}
+              >
+                <div className={style.imgDarken}></div>
+              </div>
+            </div>
+            <div className={style.infoText}>
+              <h2 className={style.infoH2}>Kuntosali</h2>
+              <p>Pyrin käymään kuntosalilla noin 2-3 kertaa viikossa.</p>
+            </div>
+
+            <div className={style.infoText}>
+              <h2 className={style.infoH2}>Salibandy</h2>
+              <p>
+                Pelasin salibandyä nuorempana sekä kilpa-, että haastajatasolla
+                yli 12 vuotta. Pelasin myös yhden kauden miesten 5. divarissa.
+                Olin joukkueissa Blackbirdsis ja TusBy. Nykyään käyn
+                satunnaisissa harjoitus peleissä.
+              </p>
+            </div>
+            <div className={style.hobbyContainer}>
+              <div
+                className={style.infoImg}
+                style={{
+                  backgroundImage: "url('')",
+                }}
+              >
+                <div className={style.imgDarken}></div>
               </div>
             </div>
           </div>
