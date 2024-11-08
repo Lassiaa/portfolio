@@ -138,7 +138,7 @@ const FrontPage = () => {
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
-    const message = `Sähköpostiosoite "${emailToCopy}" kopioitu leikepöytään`;
+    const message = `Email address "${emailToCopy}" copied to clipboard!`;
     setAlertMessage(message);
 
     setTimeout(() => {
