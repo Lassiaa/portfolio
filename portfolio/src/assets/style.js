@@ -13,7 +13,7 @@ const style = {
   headerH1Contrast:
     "ease-in-out duration-300 text-4xl text-left text-primary font-abril p-4",
 
-  headerContents: "hidden sm:flex items-center text-left gap-10 p-4 text-sm",
+  headerContents: "hidden semi:flex items-center text-left gap-10 p-4 text-sm",
 
   headerA:
     "text-white relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:rounded-md before:opacity-0 before:transition-all before:duration-500 before:bg-secondary hover:text-secondary hover:before:w-full hover:before:opacity-100",

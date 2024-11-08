@@ -181,15 +181,21 @@ const FrontPage = () => {
               </a>
               <a
                 className={contrast ? style.headerAContrast : style.headerA}
+                id="studies-link"
+              >
+                Education
+              </a>
+              <a
+                className={contrast ? style.headerAContrast : style.headerA}
                 id="project-link"
               >
                 Projects
               </a>
               <a
                 className={contrast ? style.headerAContrast : style.headerA}
-                id="studies-link"
+                id="hobby-link"
               >
-                Education
+                Hobbies
               </a>
             </div>
           </div>
@@ -506,7 +512,7 @@ const FrontPage = () => {
         </div>
       </section>
 
-      <section className={style.hobbySection} id="hobbies">
+      <section className={style.hobbySection} id="hobby">
         <div className={style.teamContainer}>
           <h2 className={style.teamHeading}>Hobbies</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
