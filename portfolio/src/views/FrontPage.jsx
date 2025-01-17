@@ -166,6 +166,7 @@ const FrontPage = () => {
             >
               Lassi Aaltonen
             </h1>
+
             <div className={style.headerContents}>
               <a
                 className={contrast ? style.headerAContrast : style.headerA}
